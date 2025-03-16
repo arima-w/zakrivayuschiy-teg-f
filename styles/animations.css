@@ -12,10 +12,12 @@
 @keyframes like {
     0% {
         transform: scale(1);
+        transform-origin: center;
     }
 
     100% {
         transform: scale(1.25);
+        transform-origin: center;
     }
 }
 
@@ -70,7 +72,7 @@
 
 .like-icon.is-liked .main-body  {
     fill: var(--sparks);
-    transition: fill 0.3s;
+    transition: fill 0.3s 0.05s;
 }
 
 .like-icon.is-liked .contour {
@@ -80,7 +82,7 @@
 
 .like-icon .contour {
     fill: var(--counter);
-    transition: fill linear;  
+    transition: fill linear 0.1s;  
 }
 
 .like-icon.is-liked .heart {
